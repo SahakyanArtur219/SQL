@@ -1,0 +1,12 @@
+USE NORTHWND
+GO 
+CREATE PROCEDURE CustomerTitle
+	@ID NCHAR(5)
+AS
+BEGIN 
+SELECT * FROM Customers
+WHERE CustomerID = @ID
+END
+
+GO
+EXEC CustomerTitle @ID = 'ALFKI'
