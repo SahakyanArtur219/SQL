@@ -1,0 +1,3 @@
+USE NORTHWND
+GO
+DISABLE TRIGGER PreventNullShipCountry ON Orders;
